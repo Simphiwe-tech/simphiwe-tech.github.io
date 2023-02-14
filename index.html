@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAPACITATE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section>
+    <div class="circle"></div>
+    <div class="circle2"></div>
+    <div class="circle3"></div>
+    <div class="circle4"></div>
+    <header>
+     <a href="#" ><img src="./imgs/logo.png" class="logo"></a>
+     <div class="toggle" onclick="toggleMenu();"></div>
+    <ul class="navigation">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="preview.html">Preview</a></li>
+      <li><a href="register.html">Register</a></li>
+    </ul>
+  </header>
+  <div class="content">
+    <div class="textBox">
+    <h2>It's not just a Project Management tool <br> It's<span>CAPACITATE</span></h2>
+    <p>Capacitate is a project management tool that has received positive reviews for its functionality 
+      and user-friendly interface. 
+      It has various features such as task management, team collaboration, time tracking, and project tracking that help teams efficiently manage their projects.
+      </p>
+      <a href="register.html">Learn More</a>
+    </div>
+    <div class="imgBox">
+      <img src="./icon/thumb1.png" class="Capacitate"> 
+    </div>
+    <ul class="thumb">
+    <li><img src="./icon/thumb1.png" onclick="imgSlider('./icon/img1.png');changeCircleColor('#043cfc')"></li>
+    <li><img src="./icon/thumb2.png" onclick="imgSlider('./icon/img2.png');changeCircleColor('#043cfc')"></li>
+    <li><img src="./icon/thumb3.png" onclick="imgSlider('./icon/img3.png');changeCircleColor('#043cfc')"></li>
+    </ul>
+    <ul class="sci">
+      <li><a href="https://www.facebook.com/CAPACITATE.Africa"><img src="./icon/facebook.png"></a></li>
+      <li><a href="#"><img src="./icon/twitter.png"></a></li> 
+      <li><a href="#"><img src="./icon/instagram.png"></a></li>
+    </ul></div></section>
+  <script type="text/javascript">
+  function imgSlider(anything){
+    document.querySelector('.Capacitate').src = anything;
+  }
+  function  changeCircleColor(color){
+    const circle = document('.Capacitate').src = anything;
+    circl.style.background = color;
+  }
+  function toggleMenu(){
+    var menuToggle = document.querySelector('.toggle');
+    var navigation = document.querySelector('.navigation')
+    menuToggle.classList.toggle('active');
+    navigation.classList.toggle('active');
+  }
+</script>
+</body>
+</html>
+

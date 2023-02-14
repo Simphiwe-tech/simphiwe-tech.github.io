@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+<link rel="stylesheet" type="text/css" href="style form.css">
+</style>
+</head>
+<body>
+  <section>
+    <div class="circle"></div>
+    <div class="circle2"></div>
+    <div class="circle3"></div>
+    <div class="circle4"></div>
+    <div class="circle5"></div>
+    <div class="circle6"></div>
+    <header>
+     <a href="#" ><img src="./imgs/logo.png" class="logo"></a>
+     <div class="toggle" onclick="toggleMenu();"></div>
+    <ul class="navigation">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="preview.html">Preview</a></li>
+      <li><a href="register.html">Register</a></li>
+    </ul>
+  </header>
+  <div class="content3">
+    <div class="registration-form">
+
+    <form action="connect.php" method="post">
+        <p>Name:</p>
+        <input type="text" name="name"><br><br>
+        <p>Surname:</p>
+        <input type="text" name="surname"><br><br>
+        <p>Email:</p>
+        <input type="text" name="email"><br><br>
+        <p>Phone Number:</p>
+        <input type="text" name="number"><br><br>
+        <p>Company Name:</p>
+        <input type="text" name="company"><br><br>
+        <button type="submit"><a href="index.html"></a>Register</button><br>
+    </form>
+</div>
+</div>
+  </section>
+<script type="text/javascript">
+  function imgSlider(anything){
+    document.querySelector('.Capacitate').src = anything;
+  }
+  function  changeCircleColor(color){
+    const circle = document('.Capacitate').src = anything;
+    circl.style.background = color;
+  }
+  function toggleMenu(){
+    var menuToggle = document.querySelector('.toggle');
+    var navigation = document.querySelector('.navigation')
+    menuToggle.classList.toggle('active');
+    navigation.classList.toggle('active');
+  }
+</script>
+</body>
+</html>

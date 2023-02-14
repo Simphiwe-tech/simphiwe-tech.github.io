@@ -1,0 +1,45 @@
+<!DOCTYPE html> 
+<html> 
+
+<link rel="stylesheet" href="styleP.css">
+<body> 
+  <section>
+    
+    <div class="circle"></div>
+    <div class="circle2"></div>
+    <div class="circle3"></div>
+    <div class="circle4"></div>
+    <header>
+     <a href="#" ><img src="./imgs/logo.png" class="logo"></a>
+     <div class="toggle" onclick="toggleMenu();"></div>
+    <ul class="navigation">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="preview.html">Preview</a></li>
+      <li><a href="register.html">Register</a></li>
+    </ul>
+  </header>
+  <div class="content2"> 
+<div class="vid">
+  <video width="520px" autoplay muted controls 
+  src="./pv/Presentation.mp4" type="video/mp4">
+</video>
+</div>
+</div>
+</section>
+<script type="text/javascript">
+  function imgSlider(anything){
+    document.querySelector('.Capacitate').src = anything;
+  }
+  function  changeCircleColor(color){
+    const circle = document('.Capacitate').src = anything;
+    circl.style.background = color;
+  }
+  function toggleMenu(){
+    var menuToggle = document.querySelector('.toggle');
+    var navigation = document.querySelector('.navigation')
+    menuToggle.classList.toggle('active');
+    navigation.classList.toggle('active');
+  }
+  </script>
+</body> 
+</html>
