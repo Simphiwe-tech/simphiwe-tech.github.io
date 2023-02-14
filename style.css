@@ -93,7 +93,7 @@ font-weight: 900;
 .content .textBox a
 {
   display: inline-block;
-  margin: top 20px;
+  margin-top:  20px;
   padding: 8px 20px;
   background:#043cfc;
   color: #fff;
@@ -153,6 +153,7 @@ transition:0.5s;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  
 }
 
 .sci li
@@ -167,6 +168,7 @@ list-style: none;
   margin:5px 0;
   transform: scale(0.6);
   filter: invert(1);
+  
 }
 
 .circle {
@@ -273,7 +275,7 @@ button {
   color: #fff;
   border: none;
   border-radius: 5px;
-  padding: 10px 20px;
+  padding: 15px 200px;
   font-size: 16px;
   cursor: pointer;
 }
