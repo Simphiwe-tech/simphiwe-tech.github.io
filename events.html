@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAPACITATE</title>
+  <link rel="stylesheet" href="eventS.css">
+</head>
+<body>
+  <section>
+   
+    <div class="circle"></div>
+    <div class="circle2"></div>
+    <div class="circle3"></div>
+    <div class="circle4"></div>
+    <div class="circle5"></div>
+    <div class="circle6"></div>
+    
+    <header>
+        <a href="#" ><img src="./imgs/logo.png" class="logo"></a>
+    
+     <div class="toggle" onclick="toggleMenu();"></div>
+    
+     <ul class="navigation">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="preview.html">Preview</a></li>
+      <li><a href="register.html">Register</a></li>
+      <li><a href="events.html">Events</a></li>
+    </ul>
+  </header>
+  
+  <div class="content">
+    <div class="container">
+        <div class="item-container">
+          <div class="img-container">
+          <img src="./imgs/img1.png" alt="Event Image">
+        </div>
+        <div class="body-container">
+          <div class="overlay"></div>
+            <div class="event-info">
+        <p class="title">CAPACITATE CO-LAB</p>
+        <div class="seperator"></div>
+        <p class="info">Online Webinar</p>
+        <P class="price">Free</P>
+        <div class="additional-info">
+        <p class="info">
+          <i class="fas fa-map-marker-alt"></i>
+          Google Meet
+        </p>
+        <p class="info">
+          <i class="far fa-calendar-alt"></i>
+          Sat, Sep 19, 10:00 AM EDT
+        </p>
+        <P class="info description">
+            COLLABORATING TO UNLOCK ENERGY OPPORTUNITIES IN SOUTH AFRICA<br>
+            cultivating global energy partnerships,
+            connecting 30 South African Women-owned businesses with 30 US energy businesses.<br><br>
+             <!---<span>more...</span>-->
+        </P>
+      </div>
+      </div><a href="register.html">
+      <button class="action">JOIN</button>
+    </a>
+    </div>
+        </div>
+        <div class="item-container">
+          <div class="img-container">
+          <img src="./imgs/img2.jpg" alt="Event Image">
+        </div>
+        <div class="body-container">
+          <div class="overlay"></div>
+            <div class="event-info">
+        <p class="title">COMING SOON!</p>
+        <div class="seperator"></div>
+        <p class="info">----</p>
+        <P class="price">--</P>
+        <div class="additional-info">
+        <p class="info">
+          <i class="fas fa-map-marker-alt"></i>
+          -----
+        </p>
+        <p class="info">
+          <i class="far fa-calendar-alt"></i>
+          -----
+          ------
+          ---
+
+        </p>
+        <P class="info description">
+          -------
+          -----------------
+          ------------------------------
+          ------------------------------
+          -----
+        </P>
+      </div>
+      </div>
+      <button class="action">JOIN</button>
+    </div>
+ 
+
+    </div>
+</section>
+  <script type="text/javascript">
+  function imgSlider(anything){
+    document.querySelector('.Capacitate').src = anything;
+  }
+  function  changeCircleColor(color){
+    const circle = document('.Capacitate').src = anything;
+    circl.style.background = color;
+  }
+  function toggleMenu(){
+    var menuToggle = document.querySelector('.toggle');
+    var navigation = document.querySelector('.navigation')
+    menuToggle.classList.toggle('active');
+    navigation.classList.toggle('active');
+  }
+</script>
+</body>
+</html>
+
