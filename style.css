@@ -393,7 +393,7 @@ padding: 20px 20px 120px;
   margin-bottom: 15px;
 }
 .content .textBox {
-
+right: 13px;
   max-width: 100%;
 }
 .content .imgBox{
@@ -418,10 +418,10 @@ clip-path:circle(350px at center bottom)
 .sci
 {
   background:#043cfc;
-  right: 0;
-  width: 50px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  right: -20px;
+  width: 35px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
 }
 .card {
   width: 100%;
