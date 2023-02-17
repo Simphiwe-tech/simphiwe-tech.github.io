@@ -146,19 +146,19 @@ header ul li a
     margin-bottom: 16px;
   }
   .additional-info{
-  border-top: 1px solid #bbb;
-  margin-top: 12px;
-  padding: 28px;
-  padding-bottom: 0;
+    border-top: 1px solid #bbb;
+    margin-top: 12px;
+    padding: 28px;
+    padding-bottom: 0;
+    
+    }
   
-  }
-  
-  .additional-info .info{
-    font-size: 0.9em;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
+    .additional-info .info{
+      font-size: 0.9em;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    
   .info i{
     color:#043cfc ;
     font-size: 1.1em;
