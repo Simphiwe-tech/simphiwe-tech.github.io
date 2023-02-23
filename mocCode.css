@@ -1,527 +1,139 @@
 @import url('https://fonts.googeapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
-*
+
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body
 {
-margin: 0;
-padding: 0;
-justify-content: flex;
-align-items: center;
-box-sizing: border-box;
-font-family: 'Poppins',sans-serif;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  min-height: 100vh;
+  background: #333;
+ 
 }
-section
-{
-position: relative;
-width:100%;
-min-height: 100vh;
-padding:100px;
-display: flex;
-justify-content: center;
-align-items:center;
-background: linear-gradient(to bottom,#f1f4f9,#dff1ff);
-
-}
-section .color{
-    position: absolute;
-    filter: blur(150px); 
-}
-section .color:nth-child(1){
-    top: -350px;
-    width:600px;
-    height: 600px;
-    background: #043cfc;
-}
-section .color:nth-child(2){
-    bottom: -150px;
-    left: 100px;
-    width:500px;
-    height:500px;
-    background: #00dff9;
-}
-section .color:nth-child(3){
-    bottom: 50px;
-    right: 100px;
-    width:300px;
-    height:300px;
-    background: #2900f9;
-}
-.box2{
-    position: relative;
-    justify-content: center;
-    align-items: center;
-}
-
-.box2 .square{
-
-    position: absolute;
-    backdrop-filter: blur(5px);
-    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
-    border: 1px solid rgba(255,255,255,0.5);
-    border-right: 1px solid rgba(255,255,255,0.2);
-    border-bottom: 1px solid rgba(255,255,255,0.2);
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    animation: animate 10s linear infinite;
-    animation-delay: calc(-1s * var(--i));
-}
-
-@keyframes animate {
-    0%{
-        transform: translateY(-40px);
-    }
-    50%{
-        transform: translateY(40px);
-    }
-}
-
-.box2 .square:nth-child(1){
-
-    top: -50px;
-    right: -60px;
-    width: 100px;
-    height: 100px;
-}
-.box2 .square:nth-child(2){
-    top: 150px;
-    left: -100px;
-    width: 120px;
-    height: 120px;
-    z-index: 2;
-}
-.box2 .square:nth-child(3){
-    bottom: 50px;
-    right: -60px;
-    width: 80px;
-    height: 80px;
-    z-index: 2;
-}
-.box2 .square:nth-child(4){
-    bottom: -80px;
-    left: 100px;
-    width: 50px;
-    height: 50px;
-}
-
-.box2 .square:nth-child(5){
-    top: -80px;
-    left: 140px;
-    width: 60px;
-    height: 60px;
-    
-}
-
-.container{
-    position: relative;
-    width: 400px;
-    min-height: 400px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    backdrop-filter: blur(5px);
-    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
-    border: 1px solid rgba(255,255,255,0.5);
-    border-right: 1px solid rgba(255,255,255,0.2);
-    border-bottom: 1px solid rgba(255,255,255,0.2);
-}
-.form{
-
-    position: relative;
-    width: 100%;
-    height: 100%;
-    padding: 40px;
-    
-}
-
-.form h2{
-    position: relative;
-    color: #fff;
-    font-size: 24px;
-    font-weight:600;
-    letter-spacing: 1px;
-    margin-bottom: 40px;  
-}
-.form h2::before{
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    width: 80px;
-    height: 4px;
-    background: #fff;
-}
-
-.form .inputBox{
-    width: 100%;
-    margin-top: 20px;
-}
-
-.form .inputBox input{
-
-    width: 100%;
-    background: rgba(255,255,255,0.2);
-    border: none;
-    outline: none;
-    padding: 10px 20px;
-    border-radius: 35px;
-    border: 1px solid rgba(255,255,255,0.5);
-    border-right: 1px solid rgba(255,255,255,0.2);
-    border-bottom: 1px solid rgba(255,255,255,0.2);
-    font-size: 16px;
-    letter-spacing: 1px;
-    color: #fff;
-    box-shadow: 0 5px 15px rgba(255,255,255,0.5);
-}
-
-.form .inputBox input::placeholder{
-    color: #fff;
-}
-.form .inputBox input[type="submit"]{
-    background:#fff;
-    color: #666;
-    max-width: 100px;
-    cursor: pointer;
-    margin-bottom: 20px;
-    font-weight: 600;
-}
-
-.forget{
-margin-top: 5px;
-color: #fff;
-}
-
-.forget{
-    color: #fff;
-    font-weight: 600;
-}
-
-header
-{
-position: absolute;
-top: 0;
-left: 0;
-width:100%;
-padding: 20px 100px;
-display: flex;
-justify-content: space-between;
-align-items: center;
-}
-header .logo
-{
-position: relative;
-max-width: 540px;
-}
-
-header ul
-{
-position: relative;
-display: flex;
-}
-header ul li
-{
-list-style: none;
-}
-header ul li a
-{
-  display:inline-block;
-  color:#333;
-  font-weight: 400;
-  margin-left: 40px;
-  text-decoration: none;
-}
-
-header ul li a:hover{
-  color: #043cfc;
-} 
-
-.content
-{
+footer {
   position: relative;
   width: 100%;
+  background: #3586ff;
+  min-height: 100px;
+  padding: 10px 50px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+footer .social_icon, footer .menu{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
 
 }
-.circle {
+footer .social_icon li, footer .menu li{
+  list-style: none;
+
+}
+footer .social_icon li a{
+  font-size: 2em;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+footer .social_icon li a:hover{
+  transform: translateY(-10px);
+}
+footer .menu li a{
+  font-size: 1.2em;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+}
+footer .menu li a:hover{
+  opacity: 1;
+}
+footer p{
+  color:#fff;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+footer .wave{
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(./imgs/wave.png);
+  background-size: 1000px 100px;
+}
+
+footer .wave#wave1{
+
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWave 4s linear infinite;
+
+}
+footer .wave#wave2{
+
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animateWave_02 4s linear infinite;
+
+}
+footer .wave#wave3{
+
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWave 3s linear infinite;
+
+}
+footer .wave#wave4{
+
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animateWave_02 3s linear infinite;
+
+}
+
+
+@keyframes animateWave{
+  0%
   
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: #043cfc;
-    clip-path: circle(300px at  right 80px);
+  {
+    background-position-x:1000px;
   }
+  100%
+  {
+    background-position-x: 0px;
+  }
+}
+@keyframes animateWave_02{
+  0%
   
-  .circle2
   {
-    position: absolute;
-    top:0;
-    left:0;
-    width: 100%;
-    height: 100%;
-    background: #043cfc;
-    clip-path: circle(60px at 200px 550px);
+    background-position-x:0px;
   }
-  .circle3
+  100%
   {
-    position: absolute;
-    top:0;
-    left:0;
-    width: 100%;
-    height: 100%;
-    background: #043cfc;
-    clip-path: circle(40px at 550px 900px);
+    background-position-x: 1000px;
   }
-  .circle4
-  {
-    position: absolute;
-    top:0;
-    left:0;
-    width: 100%;
-    height: 100%;
-    background: #043cfc;
-    clip-path: circle(10px at 600px 100px);
-  }
-  .circle5
-  {
-    position: absolute;
-    top:0;
-    left:0;
-    width: 100%;
-    height: 100%;
-    background: #043cfc;
-    clip-path: circle(35px at 900px 600px);
-  }
-  .circle6
-  {
-    position: absolute;
-    top:0;
-    left:0;
-    width: 100%;
-    height: 100%;
-    background: #043cfc;
-    clip-path: circle(90px at 900px 900px);
-  }
-
-body{
-   justify-content: flex;
-    align-items: center;
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;  
 }
-
-
-
-.registration-form{
-
-    background-color: transparent;
-    position: absolute;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 350px;
-}
-
-.registration-form h1{
-font-size: 30px;
-text-align: center;
-text-transform: uppercase;
-margin:40px 0;
-
-}
-.registration-form p{
-    font-size: 20px;
-    margin: 15px 0;
-   
-}
-.registration-form input{
-font-size:16px;
-padding:15px 10px;
-width: 100%;
-border: 0;
-border-radius: 5px;
-outline: none;
-background-color: #e9e9e9;
-}
-.registration-form button{
-    font-size:18px;
-    font-weight: bold;
-    margin: 20px 0;
-    padding: 10px 15px;
-    width: 50%;
-    border:0;
-    border-radius: 5px;
-    background-color: transparent;
-}
-
-.button  a {
-    font-size:18px;
-    font-weight: bold;
-    margin: 20px 0;
-    padding: 10px 15px;
-    width: 50%;
-    border:0;
-    border-radius: 5px;
-    background-color: transparent;
-}
-
-
-
-      /* Add styles for larger screens */
-      @media only screen and (max-width: 991px) 
-        {
-
-          header{
-        
-            padding:20px;
-          }
-          header .logo{
-        
-            max-width: 60px;
-          }
-        
-          header ul{
-            
-            display: none;
-          }
-          .toggle{
-            position: relative;
-            width: 30px;
-            height: 30px;
-            cursor: pointer;
-            background: url(./icon/menu.png);
-            background-size: 30px;
-            background-position: center;
-            background-repeat: no-repeat;
-            filter :invert(1);
-            z-index: 11;
-          }
-          .toggle.active{
-            position: fixed;
-            right:20px;
-            background: url(./icon/close.png);
-            background-size: 25px;
-            background-position: center;
-            background-repeat: no-repeat;
-            filter :invert(1);
-        
-          }
-          header ul.navigation.active{
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            background: #fff;
-            z-index: 10;
-        
-          }
-          header ul li a{
-        
-            font-size: 1.5em;
-            margin: 5px 0;
-          }
-        section{
-        padding: 20px 20px 120px;
-        }
-        .content {
-        
-          flex-direction: column;
-          margin-top: 100px;
-        }
-        .content .textBox h2{
-        
-          font-size:2.5em;
-          margin-bottom: 15px;
-        }
-        .content .textBox {
-        
-          max-width: 100%;
-        }
-        .content .imgBox{
-        
-          max-width: 100%;
-          justify-content: center;
-        }
-        
-        .content .imgBox img{
-        
-          max-width: 300px;
-        }
-        .thumb li img{
-          max-width: 40px;
-        }
-        .circle
-        {
-        
-        clip-path:circle(350px at center bottom)
-        
-        }
-        .sci
-        {
-          background:#043cfc;
-          right: 0;
-          width: 50px;
-          border-top-left-radius: 5px;
-          border-bottom-left-radius: 5px;
-        }
-        .registration-form {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-        }
-        .registration-form p,
-        .registration-form input {
-          width: 45%;
-        }
-      }
-      /* Add styles for smaller screens */
-      @media only screen and (max-width: 991px) {
-        .registration-form {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-        }
-        .registration-form p,
-        .registration-form input {
-          width: 100%;
-          margin-bottom: 10px;
-        }
-      }
-      /* Add basic form styles */
-      .registration-form {
-        background-color: transparent;
-        padding: 20px;
-        border-radius: 10px;
-      }
-      .registration-form p {
-        font-weight: bold;
-        margin-right: 10px;
-      }
-      .registration-form input[type="text"],
-      .registration-form input[type="email"],
-      .registration-form textarea {
-        padding: 10px;
-        border: none;
-        border-radius: 5px;
-        font-size: 16px;
-        width: 100%;
-      }
-      .registration-form button[type="submit"] {
-        background-color: #043cfc;
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        font-size: 16px;
-        cursor: pointer;
-      }
-
-     
