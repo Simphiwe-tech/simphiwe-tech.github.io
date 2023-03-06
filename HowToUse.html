@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAPACITATE</title>
+  <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css" />
+
+  <link rel="stylesheet" href="mocCode.css">
+</head>
+<body>
+  <section>
+   
+    <div class="circle"></div>
+    <div class="circle2"></div>
+    <div class="circle3"></div>
+    <div class="circle4"></div>
+    <div class="circle5"></div>
+    <div class="circle6"></div>
+    
+    <header>
+        <a href="#" ><img src="./imgs/logo.png" class="logo"></a>
+    
+     <div class="toggle" onclick="toggleMenu();"></div>
+    
+     <ul class="navigation">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="welcome.html">Welcome</a></li>
+      <li><a href="preview.html">Preview</a></li>
+      <li class="active"><a href="HowToUse">HowToUse</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="https://app.capacitate.africa/login">Get Started</a></li>
+    </ul>
+  </header>
+  
+  <div class="content">
+    <div class="container">
+      
+      <div class="ytcontainer">
+      <div class= "yt-holder"id="light">
+        <iframe src="https://www.youtube.com/embed/wJjcA3iUNyQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <!--Browser does not support <video> tag -->
+          </video>
+      </div>
+    </div>
+      <div id="fade" onClick="lightbox_close();"></div>
+      <div>
+       
+      </div>
+        <div class="item-container">
+          <div class="img-container">
+          <img src="./imgs/invoice.png" alt="Event Image">
+        </div>
+        <div class="body-container">
+          <div class="overlay"></div>
+            <div class="event-info">
+        <p class="title">CAPACITATE CO-LAB</p>
+        <div class="seperator"></div>
+        <p class="info">Online Webinar</p>
+        <P class="price">Free</P>
+        <div class="additional-info">
+        <p class="info">
+          <i class="fas fa-map-marker-alt"></i>
+          Google Meet
+        </p>
+        <p class="info">
+          <i class="far fa-calendar-alt"></i>
+          Sat, Sep 19, 10:00 AM EDT
+        </p>
+        <P class="info description">
+            COLLABORATING TO UNLOCK ENERGY OPPORTUNITIES IN SOUTH AFRICA<br>
+            cultivating global energy partnerships,
+            connecting 30 South African Women-owned businesses with 30 US energy businesses.<br><br>
+             <!---<span>more...</span>-->
+        </P>
+      </div>
+      </div><a href="#" onclick="lightbox_open();">
+      <button class="action">Watch video</button>
+    </a>
+    </div>
+        </div>
+        <div id="light2">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/St8TK1aY_nw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        
+        <div id="fade2" onClick="lightbox_close2();"></div>
+        
+        <div class="item-container">
+          <div class="img-container">
+          <img src="./imgs/knowledge 2.png" alt="Event Image">
+        </div>
+        <div class="body-container">
+          <div class="overlay"></div>
+            <div class="event-info">
+        <p class="title">COMING SOON!</p>
+        <div class="seperator"></div>
+        <p class="info">----</p>
+        <P class="price">--</P>
+        <div class="additional-info">
+        <p class="info">
+          <i class="fas fa-map-marker-alt"></i>
+          -----
+        </p>
+        <p class="info">
+          <i class="far fa-calendar-alt"></i>
+          -----
+          ------
+          ---
+
+        </p>
+        <P class="info description">
+          -------
+          -----------------
+          ------------------------------
+          ------------------------------
+          -----
+        </P>
+      </div>
+      </div>
+    </div><a href="#" onclick="lightbox_open2();">
+      <button class="action">Watch video</button></a>
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+</section>
+<footer>
+    
+  <ul class="social_icon">
+    <li><a href="https://www.facebook.com/CAPACITATE.Africa"><i class="lni lni-facebook-oval"></i></a></li>
+ 
+  </ul>
+  <br><br>
+  <ul class="menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="welcome.html">Welcome</a></li>
+    <li><a href="preview.css">Preview</a></li>
+    <li><a href="HowToUse.html">HowToUse</a></li>
+    <li><a href="events.html">Events</a></li>
+    <li><a href="https://app.capacitate.africa/login">Get Strated</a></li>
+    
+  </ul>
+  <br><br>
+  <p>2023 CAPACITATE | All Rights Reserved </p>
+</footer>
+
+
+
+  <script type="text/javascript">
+  function imgSlider(anything){
+    document.querySelector('.Capacitate').src = anything;
+  }
+  function  changeCircleColor(color){
+    const circle = document('.Capacitate').src = anything;
+    circl.style.background = color;
+  }
+  function toggleMenu(){
+    var menuToggle = document.querySelector('.toggle');
+    var navigation = document.querySelector('.navigation')
+    menuToggle.classList.toggle('active');
+    navigation.classList.toggle('active');
+  }
+</script>
+
+<script>window.document.onkeydown = function(e) {
+  if (!e) {
+    e = event;
+  }
+  if (e.keyCode == 27) {
+    lightbox_close();
+  }
+}
+
+function lightbox_open() {
+  var lightBoxVideo = document.getElementById("VisaChipCardVideo");
+  window.scrollTo(0, 0);
+  document.getElementById('light').style.display = 'block';
+  document.getElementById('fade').style.display = 'block';
+  lightBoxVideo.play();
+}
+
+function lightbox_open2() {
+  var lightBoxVideo2 = document.getElementById("VisaChipCardVideo2");
+  window.scrollTo(0, 0);
+  document.getElementById('light2').style.display = 'block';
+  document.getElementById('fade2').style.display = 'block';
+  lightBoxVideo2.play();
+}
+
+function lightbox_open3() {
+  var lightBoxVideo3 = document.getElementById("VisaChipCardVideo3");
+  window.scrollTo(0, 0);
+  document.getElementById('light3').style.display = 'block';
+  document.getElementById('fade3').style.display = 'block';
+  lightBoxVideo3.play();
+}
+
+
+function lightbox_close() {
+  var lightBoxVideo = document.getElementById("VisaChipCardVideo");
+  document.getElementById('light').style.display = 'none';
+  document.getElementById('fade').style.display = 'none';
+  lightBoxVideo.pause();
+}
+
+  function lightbox_close2() {
+  var lightBoxVideo2 = document.getElementById("VisaChipCardVideo2");
+  document.getElementById('light2').style.display = 'none';
+  document.getElementById('fade2').style.display = 'none';
+  lightBoxVideo2.pause();
+}
+function lightbox_close3() {
+  var lightBoxVideo3 = document.getElementById("VisaChipCardVideo3");
+  document.getElementById('light3').style.display = 'none';
+  document.getElementById('fade3').style.display = 'none';
+  lightBoxVideo3.pause();
+  
+}
+  </script>
+
+</body>
+</html>
+

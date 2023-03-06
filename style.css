@@ -1,13 +1,16 @@
 @import url('https://fonts.googeapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
-
 *
 {
 margin: 0;
 padding: 0;
 box-sizing: border-box;
-font-family: 'Poppins',sans-serif;
+font-family: 'Roboto',sans-serif;
 }
+html{
+  background-color: #fff;
+}
+
 section
 {
 position: relative;
@@ -73,15 +76,65 @@ list-style: none;
 header ul li a
 {
   display:inline-block;
-  color:#333;
-  font-weight: 400;
+  color: #666;
+  font-weight: 500;
   margin-left: 40px;
   text-decoration: none;
+  font-size: 14px;
+  text-transform: capitalize;
+  position: relative;
+  padding: 30px 15px;
+	z-index:3;
 }
-header ul li a:hover{
-  color: #043cfc;
-} 
+header li a::before{
+  position: absolute;
+	content: "";
+	left: 0;
+	bottom: 50%;
+	height: 34px;
+	width:0%;
+	background: #006DFE;
+	margin-bottom: -17px;
+	opacity:0;
+	visibility:hidden;
+	-webkit-transition:all 0.4s ease;
+	-moz-transition:all 0.4s ease;
+	transition:all 0.4s ease;
+	border-radius:3px;
+	z-index:-1;
+}
+header li:hover a:before{
+  opacity:1;
+	visibility:visible;
+	width:100%;
+}
 
+header li:hover a{
+color: #fff;
+}
+
+header  li.active a:before{
+	opacity:1;
+	visibility:visible;
+	width:100%;
+}
+
+header li.active a{
+	color:#fff;
+}
+header  li a i{
+	margin-left:10px;
+	font-size:15px;
+	-webkit-transition:all 0.4s ease;
+	-moz-transition:all 0.4s ease;
+	transition:all 0.4s ease;
+}
+header  li a:hover{
+	color:#fff ;
+}
+header li:hover a i{
+	transform:rotate(180deg);
+}
 .content
 {
   position: relative;
@@ -97,8 +150,6 @@ position: relative;
 max-width: 600px;
 
 }
-
-
 .content .textBox h2
 {
   color: #333;
@@ -107,7 +158,6 @@ max-width: 600px;
   font-weight: 500;
 
 }
-
 
 .content .textBox h2 span
 {
@@ -269,7 +319,7 @@ list-style: none;
   width: 100%;
   height: 100%;
   background: #043cfc;
-  clip-path: circle(600px at  right 800px);
+  clip-path: circle(500px at  right 600px);
  
 }
 
@@ -313,7 +363,6 @@ footer {
   position: relative;
   width: 100%;
   background: #043cfc;
-  opacity: 0.9;
   min-height: 100px;
   padding: 10px 50px;
   display: flex;
@@ -532,6 +581,21 @@ button {
   background: #043cfc;
   clip-path: circle(595px at right -134px);
 }
+
+
+@media screen and (min-width: 1920px){
+  
+  .content{
+    justify-content: space-evenly;
+    padding: 163px;
+    margin: 109px;
+  }
+  
+  
+
+}
+  
+
 
 @media (max-width: 911px)
 {

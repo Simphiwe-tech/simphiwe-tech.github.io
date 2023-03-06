@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CAPACITATE</title>
   <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css" />
-  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="welcome.css">
 </head>
 <body>
   <section>
@@ -14,43 +15,31 @@
     <div class="circle2"></div>
     <div class="circle3"></div>
     <div class="circle4"></div>
-
-<header>
+    <header>
      <a href="#" ><img src="./imgs/logo.png" class="logo"></a>
      <div class="toggle" onclick="toggleMenu();"></div>
-    
-   
-     <ul class="navigation">
-      <li class="active"><a href="index.html">Home</a></li>
-      <li><a href="welcome.html">Welcome</a></li>
+    <ul class="navigation">
+      <li><a href="index.html">Home</a></li>
+      <li class="active"><a href="welcome.html">Welcome</a></li>
       <li><a href="preview.html">Preview</a></li>
       <li><a href="HowToUse.html">HowToUse</a></li>
       <li><a href="events.html">Events</a></li>
       <li><a href="https://app.capacitate.africa/login">Get Started</a></li>
     </ul>
-</header>
-    
- 
+  </header>
   <div class="content">
-    <div class="textBox">
-    <h2>It's not just a busines tool, It's an <br> <span>Enterprise <br> Management <br> System</span></h2>
-    <p> CAPACITATE positions small and micro businesses for growth by assisting them build systems and processes. It enables you to manage project, clients, financial transactions and more...
-      </p>
-      <a href="https://app.capacitate.africa/login" target="_blank">Get Started</a>
-    </div>
-    <div class="imgBox">
    
       
-      
-      <img src="./icon/thumb1.png" class="Capacitate"> 
-    </div>
-    <ul class="thumb">
-    <li><img src="./icon/thumb1.png" onclick="imgSlider('./icon/img1.png');changeCircleColor('#043cfc')"></li>
-    <li><img src="./icon/thumb2.png" onclick="imgSlider('./icon/img2.png');changeCircleColor('#043cfc')"></li>
-    <li><img src="./icon/thumb3.png" onclick="imgSlider('./icon/img3.png');changeCircleColor('#043cfc')"></li>
-    </ul>
-   </div>
-  </section>
+      <div class="ytcontainer">
+        <h2>What is CAPACITATE?</h2>
+        <div class="yt-holder">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/hLwpIlcsVpQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+  
+    
+  
+  </div></section>
+
   <footer>
     
     <ul class="social_icon">
@@ -70,6 +59,8 @@
     <br><br>
     <p>2023 CAPACITATE | All Rights Reserved </p>
   </footer>
+
+
   <script type="text/javascript">
   function imgSlider(anything){
     document.querySelector('.Capacitate').src = anything;
@@ -84,10 +75,27 @@
     menuToggle.classList.toggle('active');
     navigation.classList.toggle('active');
   }
-</script>
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
+  let slideIndex = 1;
+showSlides(slideIndex);
+
+function changeSlide(n) {
+  showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+  let i;
+  const slides = document.getElementsByClassName("slides")[0].getElementsByTagName("img");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
+}
+
+
+</script>
 </body>
 </html>
 
